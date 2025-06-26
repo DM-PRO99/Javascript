@@ -1,4 +1,4 @@
-//Crear los objetos
+//Crear los objetos tenemos frutas y parte de tecnologia.
 const productos = {
   producto1: { id: 1, nombre: "Peras", precio: 30000},
   producto2: { id: 2, nombre: "Piñas", precio: 1500000},
@@ -14,11 +14,10 @@ const productos = {
 console.log("Productos (objeto):");
 console.log(productos);
 
-//Convertir el objeto a un Set
-// Primero, extraemos los valores del objeto y los convertimos en un array
+//Convertir los objetos  a un Set
 const productosArray = Object.values(productos);
 
-// Creamos un Set (los sets no permiten duplicados)
+// Creo un set ya que estos no permiten duplicarlos.
 const productosSet = new Set(productosArray);
 
 console.log("Productos únicos (Set):");
@@ -26,7 +25,7 @@ for (const prod of productosSet) {
   console.log(prod);
 }
 
-//Crear un Map para asociar categorías
+//Crear un Map para las categorias que tengo.
 const categoriasMap = new Map();
 categoriasMap.set("Frutas", "Peras");
 categoriasMap.set("Frutas", "Piñas");
@@ -43,7 +42,8 @@ categoriasMap.forEach((valor, clave) => {
   console.log(`Categoría: ${clave}, Producto: ${valor}`);
 });
 
-//Recorrer el objeto con for...in
+
+//Recorrer los  objetos  con for...in
 console.log("Recorrido del objeto productos con for...in:");
 for (const key in productos) {
   console.log(`${key}:`, productos[key]);
@@ -57,7 +57,7 @@ for (const item of productosSet) {
 
 
 //Validaciones
-console.log("📌 Validaciones:");
+console.log("Validaciones:");
 console.log("Cantidad de productos en objeto:", Object.keys(productos).length);
 console.log("Cantidad de productos únicos en Set:", productosSet.size);
 console.log("Cantidad de categorías en Map:", categoriasMap.size);
