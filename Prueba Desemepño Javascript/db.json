@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "ac2e",
+      "name": "mena",
+      "email": "mena@yahoo.com",
+      "password": "5410",
+      "role": "visitor"
+    }
+  
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Concierto de Rock",
+      "date": "2023-10-01",
+      "capacity": 1000,
+      "description": "Un gran concierto de rock con bandas locales."
+    },
+    {
+      "id": 2,
+      "name": "Feria de Comida",
+      "date": "2023-10-15",
+      "capacity": 500,
+      "description": "Una feria con una variedad de comidas de todo el mundo."
+    }
+  ]
+}
