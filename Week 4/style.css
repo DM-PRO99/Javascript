@@ -1,0 +1,90 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f0f2f5, #d6e4f0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+form {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#saveBtn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#saveBtn:hover {
+  background-color: #45a049;
+  transform: scale(1.02);
+}
+
+#clearBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+#clearBtn:hover {
+  background-color: #e53935;
+  transform: scale(1.02);
+}
+
+
+#output, #contador {
+  margin-top: 25px;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  color: #444;
+}
