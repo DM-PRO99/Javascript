@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manipulación DOM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h2>Formulario de Usuario</h2>
+  <form id="userForm">
+    <label for="name">Nombre:</label><br />
+    <input type="text" id="name" required /><br />
+
+    <label for="age">Edad:</label><br />
+    <input type="number" id="age" required /><br />
+
+    <button type="button" id="saveBtn">Guardar Datos</button>
+    <button type="button" id="clearBtn">Limpiar Datos</button>
+  </form>
+
+  <div id="output">Cargando datos...</div>
+  <div id="contador">Interacciones: 0</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
