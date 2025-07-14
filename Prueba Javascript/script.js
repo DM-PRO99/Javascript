@@ -1,24 +1,16 @@
-const routes = {
-  "/": "./users.html",
-  "/users": "./users.html",
-  "/newuser": "./newuser.html",
-  "/about": "./about.html",
-};
+import { checkAuth } from './auth.js';
+import { router, navigate } from './router.js';
 
-document.body.addEventListener("click", (e) => {
-  if (e.target.matches("[data-link]")) {
-    e.preventDefault();
-    navigate(e.target.getAttribute("href"));
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  checkAuth();
+  router();
+
+  document.body.addEventListener('click', e => {
+    if (e.target.matches('a[data-link]')) {
+      e.preventDefault();
+      navigate(e.target.getAttribute('href'));
+    }
+  });
+
+  window.onpopstate = () => router();
 });
-
-async function navigate(pathname) {
-  const route = routes[pathname];
-  const html = await fetch(route).then((res) => res.text());
-  document.getElementById("content").innerHTML = html;
-  history.pushState({}, "", pathname);
-}
-
-window.addEventListener("popstate", () =>
-  navigate(location.pathname)
-);
